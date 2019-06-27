@@ -16,4 +16,8 @@ Rama feature/modelos
 En esta rama se agregaron los modelos para la base de datos de autor y libro
 
 Rama feature/public
-En esta rama se elimino una carpeta llamada stylesheet que no se la iba a utilizar, y creamos una carpeta llamada js en donde se añadio un archivo llamado author.js con funciones de la identidad autor
+En esta rama se elimino una carpeta llamada stylesheet que no se la iba a utilizar, y creamos una carpeta llamada js en donde se añadio un archivo llamad/o author.js con funciones de la identidad autor
+
+Rama feature/routes 
+En esta rama se eliminno los archivos predeterminados de user.js y de index.js, y agregamos los archivos de books.js author.js e index.js
+que contienen las para las respectivas clases. 
