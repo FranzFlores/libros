@@ -8,15 +8,47 @@ var session = require('express-session');
 
 var app = express();
 
+//Configuraciones
+const db = require('./database');
+const flashOptions = {
+  beforeSingleRender: function(item,callback) {
+    if (item.type) {
+      switch (item.type) {
+        case 'GOOD':
+          item.type = 'Hecho';
+          item.alertClass = 'alert-success';
+          break;
+        case 'OK':
+          item.type = 'Info';
+          item.alertClass = 'alert-info';
+          break;
+        case 'BAD':
+          item.type = 'Error';
+          item.alertClass = 'alert-danger';
+          break;
+      }
+    }
+    callback(null,item);
+  }
+};
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
+app.use(session({
+  name: 'libros',
+  secret: 'libros',
+  resave: true,
+  saveUninitialized: true,
+}));
+app.use(flash(app,flashOptions));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 
