@@ -4,6 +4,7 @@ $(document).ready(function () {
     bookList1();
 });
 
+// Cargar Países por AJAX
 function loadCountries() {
     var url = "https://restcountries.eu/rest/v2/all";
     $.ajax({
@@ -27,6 +28,7 @@ function loadCountries() {
     });
 }
 
+// Cargar Listado de Libros por AJAX
 function bookList1() {
     var url = "http://localhost:3000/api/bookList";
     $.ajax({
@@ -47,7 +49,7 @@ function bookList1() {
     });
 }
 
-
+// Cargar Listado de Autores por AJAX
 function authorList() {
     var url = "http://localhost:3000/api/authorList";
     $.ajax({

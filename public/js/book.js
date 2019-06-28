@@ -2,6 +2,7 @@ $(document).ready(function () {
     bookList();
 });
 
+// Cargar listado de Libros por AJAX
 function bookList() {
     var url = "http://localhost:3000/api/bookList";
     $.ajax({
@@ -63,6 +64,7 @@ function bookList() {
     });
 }
 
+// Obtener el nombre del autor
 function getAuthorName(idBook) {
     var url = "http://localhost:3000/api/getAuthorBook/" + idBook;
     var name = $.ajax({
