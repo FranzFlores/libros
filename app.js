@@ -10,6 +10,8 @@ var app = express();
 
 //Configuraciones
 const db = require('./database');
+
+//Configuraciones de las notificaciones Flash
 const flashOptions = {
   beforeSingleRender: function(item,callback) {
     if (item.type) {
@@ -44,13 +46,12 @@ app.use(session({
   resave: true,
   saveUninitialized: true,
 }));
+
+// Middlewares
 app.use(flash(app,flashOptions));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
