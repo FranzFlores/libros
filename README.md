@@ -22,7 +22,7 @@ Clone el repositorio con el siguiente comando:
 ## Características (features)
 En el presente proyecto se han especificado las siguientes ramas de características:
 
-###feature/BookController
+### feature/BookController
                 
 ----
 En la presente rama se subio un unico commit con el controlador que permite el CRUD de los libros en la aplicacion.
@@ -31,7 +31,7 @@ En la presente rama se subio un unico commit con el controlador que permite el C
 
 `git flow finish feature BookController`
 
-###feature/database
+### feature/database
                 
 ----
 En esta rama se subio tanto la conexion con la base de datos Neo4j en un commit. En el segundo commit se subio algunas configuraciones respecto al archivo principal app.js
@@ -40,7 +40,7 @@ En esta rama se subio tanto la conexion con la base de datos Neo4j en un commit.
 
 `git flow finish feature database`
 
-###feature/BookView
+### feature/BookView
                 
 ----
 En esta rama se agregaron los commits para las vistas de libro, el mensaje flash e inicio.
@@ -49,7 +49,7 @@ En esta rama se agregaron los commits para las vistas de libro, el mensaje flash
 
 `git flow finish feature BookView`
 
-###feature/modelos
+### feature/modelos
                 
 ----
 En esta rama se agregaron los modelos para la base de datos de autor y libro.
@@ -58,7 +58,7 @@ En esta rama se agregaron los modelos para la base de datos de autor y libro.
 
 `git flow finish feature modelos`
 
-###feature/public
+### feature/public
                 
 ----
 En esta rama se elimino una carpeta llamada stylesheet que no se la iba a utilizar, y creamos una carpeta llamada js en donde se añadio un archivo llamado author.js con funciones de la identidad autor.
@@ -67,7 +67,7 @@ En esta rama se elimino una carpeta llamada stylesheet que no se la iba a utiliz
 
 `git flow finish feature public`
 
-###feature/routes
+### feature/routes
                 
 ----
 En esta rama se eliminaron los archivos predeterminados de user.js y de index.js, y agregamos los archivos de books.js author.js e index.js que contienen las para las respectivas clases.
@@ -76,7 +76,7 @@ En esta rama se eliminaron los archivos predeterminados de user.js y de index.js
 
 `git flow finish feature routes`
 
-###feature/author
+### feature/author
                 
 ----
 En esta rama se añadieron los archivos para el controlador y vistas de Autores, además de el header y footer de las plantillas.
@@ -89,7 +89,7 @@ En esta rama se añadieron los archivos para el controlador y vistas de Autores,
 ## Corrección de errores encontrados (bugfixes)
 En el presente proyecto se han especificado las siguientes ramas para la corrección de errores:
 
-###bugfix/correcciones
+### bugfix/correcciones
                 
 ----
 En esta rama se corrigieron errores encontrados en el archivo principal de configuración de Nodejs.
@@ -102,7 +102,7 @@ En esta rama se corrigieron errores encontrados en el archivo principal de confi
 ## Publicaciones (releases)
 En el presente proyecto se han especificado las siguientes ramas de publicaciones:
 
-###release/v0.1
+### release/v0.1
                 
 ----
 En esta versión, se corrigieron algunos problemas que habían pasado desapercibidos anteriormente.
@@ -117,7 +117,7 @@ En esta versión, se corrigieron algunos problemas que habían pasado desapercib
 ## Corrección de errores en producción (hotfixes)
 En el presente proyecto se han especificado las siguientes ramas para las correciones en producción:
 
-###hotfix/v0.2
+### hotfix/v0.2
                 
 ----
 Se corrigieron errores encontrados en el archivo index.ejs, se especifica la versión 0.2 del proyecto.
