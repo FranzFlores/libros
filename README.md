@@ -18,6 +18,20 @@ Clone el repositorio con el siguiente comando:
 
 **Nota:** para clonar por medio de SSH, se necesita una llave SSH y una contraseña fijada tanto en la cuenta como localmente en el computador.
 
+Dirigirse a la carpeta clonada:
+
+`cd libros/`
+
+Instalar todas las dependencias:
+
+`npm i`
+
+`npm install`
+
+Por último ejecutarlo (se da por sentado de que el servidor de base de datos de Neo4j ya está ejecutado):
+
+`npm run dev`
+
 -------------
 ## Características (features)
 En el presente proyecto se han especificado las siguientes ramas de características:
